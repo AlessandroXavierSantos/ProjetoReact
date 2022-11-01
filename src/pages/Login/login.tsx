@@ -2,10 +2,15 @@ import { useState } from 'react'
 import React from 'react'
 import './style.css'
 
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo2.png'
 import imagemLogin from '../../assets/imagemLogin.png'
 
 export default function login(){
+    const {text, setText} = useState('Selecione uma opção abaixo');
+
+    const atualizandoInput = () => {
+    }
+
     return(
         <div className="login">
             <div className="secondContainer">
@@ -22,18 +27,22 @@ export default function login(){
                 </div>
                 <div className="containerInputs">
                     <div>
-                        <label>CNPJ da Escola:</label>
+                        <label>{text}</label>
                         <input type="text" className="inputs"/>
                     </div>
                     <div>
                         <label>Senha:</label>
                         <input type="password" className="inputs "/>
                     </div>
-                    <div className="containerInput">
-                        <div className="divInput">
-                            <input type="radio" className="inputRadio"/>
-                            <label>Escola</label>    
-                        </div>
+                </div>
+                <div className="containerInput">
+                    <div className="divInput">
+                        <input type="radio" name="type"/>
+                        <label>Escola</label>    
+                    </div>
+                    <div className="divInput">
+                        <input type="radio" name="type"/>
+                        <label>Professor</label> 
                     </div>
                 </div>
                 <div>

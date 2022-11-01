@@ -1,0 +1,17 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #F3F0F6;
+}
+
+.mid{
+    width: 100%;
+    height: 100%;
+}
+
+#root{
+    width: 100%;
+}

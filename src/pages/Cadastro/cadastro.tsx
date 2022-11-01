@@ -4,7 +4,7 @@ import './style.css'
 import login from '../Login/login'
 
 import imagemCadastro from '../../assets/imageCadastro.png'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo2.png'
 
 export default function cadastro(){
     return(
