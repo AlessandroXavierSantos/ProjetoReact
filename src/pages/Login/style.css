@@ -19,9 +19,11 @@ label{
 
 .login{
     background-color: #ffffff;
-    /* display: flex;
-    flex-direction: row; */
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* display: grid; */
     grid-template-columns: 2fr 2fr;
     overflow-x: hidden;
 }
@@ -31,7 +33,7 @@ label{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     border-radius: 15px 0px 0px 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.54);
@@ -139,6 +141,7 @@ input:focus{
 }
 
 .secondContainer{
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,39 +185,41 @@ input[type="radio"] {
  
     font: inherit;
     color: currentColor;
-    width: 1em;
-    height: 1em;
-    /* border: 0.15em solid currentColor; */
-    border-radius: 0.15em;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid rgba(128, 128, 128, 0.445);
+    border-radius: 100%;
     transform: translateY(-0.075em);
  
+
     display: grid;
     place-content: center;
  
     margin-right: 5px;
     cursor: pointer;
 }
+
+input[type="radio"]:checked {
+    border:  solid 2px #7900D9;
+}
  
 input[type="radio"]::before {
     content: "";
-    width: 0.65em;
-    height: 0.65em;
-    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    width: 1.2em;
+    height: 1.2em;
+    clip-path: circle(30%);
     transform: scale(0);
     transform-origin: bottom left;
     transition: 120ms transform ease-in-out;
     box-shadow: inset 1em 1em var(--form-control-color);
     /* Windows High Contrast Mode */
     background-color: #7900D9;
+    display: flex;
+    align-items: center;
 }
  
 input[type="radio"]:checked::before {
     transform: scale(1);
-}
- 
-input[type="radio"]:focus {
-    /* outline: max(2px, 0.15em) solid currentColor;
-    outline-offset: max(2px, 0.15em); */
 }
  
 input[type="radio"]:disabled {
@@ -222,4 +227,19 @@ input[type="radio"]:disabled {
  
     color: var(--form-control-disabled);
     cursor: not-allowed;
+}
+
+.animation{
+    animation-name: changeScreen;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes changeScreen {
+    from {
+        flex-direction: row;
+    }
+    to{
+        flex-direction: row-reverse;
+    }
 }
