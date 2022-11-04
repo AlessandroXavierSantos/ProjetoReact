@@ -28,6 +28,17 @@ label{
     overflow-x: hidden;
 }
 
+.login-reverse{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    /* display: grid; */
+    grid-template-columns: 2fr 2fr;
+    overflow-x: hidden;
+}
+
 .firstContainer{
     display: flex;
     justify-content: center;
@@ -49,7 +60,7 @@ label{
 
 .textTitule{
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 400;
 }
 
@@ -230,16 +241,32 @@ input[type="radio"]:disabled {
 }
 
 .animation{
+    background-color: white;
+    z-index: +2;
     animation-name: changeScreen;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-iteration-count: 1;
+    
 }
 
+/* .animated{
+    z-index: +2;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+} */
+
 @keyframes changeScreen {
-    from {
-        flex-direction: row;
+    
+    0% {
+        /* flex-direction: row; */
+        transform: translateX(0%);
     }
-    to{
-        flex-direction: row-reverse;
+    100%{
+        
+        transform: translateX(-100%);
+        /* flex-direction: row-reverse; */
     }
 }

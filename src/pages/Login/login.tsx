@@ -9,23 +9,36 @@ import imagemLogin from '../../assets/imagemLogin.png'
 
 export default function login(){
     const [form, setForm] = useState('');
-    const [containerClass, setContainerClass] = useState('login')
+    const [containerClass, setContainerClass] = useState('firstContainer')
+    const [loginClass, setLoginClass] = useState('login')
+    const [showLogo, setShowLogo] = useState('show')
 
     const changeToCadastro = ()=>{
-        setContainerClass('login animation');
+        setContainerClass('firstContainer animation');
+        setTimeout(()=> {
+            setContainerClass('firstContainer');
+            setLoginClass('login-reverse')
+            setShowLogo('none')
+            // document.location.href="/cadastro";
+        }, 1400)
     }
 
     return(
-        <div className={containerClass}>
+        <div className={loginClass}>
             <div className="secondContainer">
-                <div className="containerLogo">
-                    <img src={logo}/>
-                </div>
+                {
+                    showLogo == 'show' ? (
+                        <div className="containerLogo" >
+                            <img src={logo}/>
+                        </div>
+                    ) :
+                    null
+                }
                 <div className="containerImage">
                     <img src={imagemLogin}/>
                 </div>
             </div>
-            <div className="firstContainer">
+            <div className={containerClass}>
                 <div className="containerTitule">   
                     <h1 className="textTitule">Já tem uma conta? Comece a ensinar e gestar de um jeito mais rápido e mais <span className="textColor">evoluído</span></h1>
                 </div>
