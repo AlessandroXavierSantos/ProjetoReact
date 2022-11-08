@@ -2,7 +2,6 @@ import { useState } from 'react'
 import React from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import './style.css'
-import login from '../Login/login'
 
 import imagemCadastro from '../../assets/imageCadastro.png'
 import logo from '../../assets/logo2.png'
@@ -38,7 +37,7 @@ export default function cadastro(){
                     </div>
                 </div>
                 <div>
-                    <h3 className="textLoginCadastro">Já possui uma conta? Clique <span className="textColorCadastro click"><Link to='/'>aqui</Link></span></h3>
+                    <h3 className="textLoginCadastro">Já possui uma conta? Clique <span className="textColorCadastro click">aqui</span></h3>
                 </div>
                 <div>
                     <button className="btnCriarCadastro">Criar</button>
