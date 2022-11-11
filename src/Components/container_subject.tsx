@@ -27,7 +27,7 @@ function Disciplina() {
                             </section>
                             <section className='form'>
                                 <label>Nome do Professor:</label> 
-                                <input type='text' className='input_reg' placeholder='Sandra'></input>
+                                <select name='class' className='input_reg' placeholder='Sandra'></select>
                             </section>
                             <section className='button'>
                                 <button type='submit' className='register_btn'>Cadastrar</button>

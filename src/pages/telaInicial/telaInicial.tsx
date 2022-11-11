@@ -28,9 +28,8 @@ export default function telaInicial(){
     return(
         <div className="telaInicial">
             <div className="firstDiv">
-                
+                <Login/>
             </div>
-            {/* <Login/>  */}
             {/* <Cadastro/> */}
         </div>
     )

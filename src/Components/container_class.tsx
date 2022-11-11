@@ -25,8 +25,12 @@ function Turma() {
                                 <input type='text' className='input_reg' placeholder='3B1'></input>
                             </section>
                             <section className='form'>
-                                <label>Limite de alunos da Turma:</label> 
+                                <label>Limite de alunos da Turma:</label>
                                 <input type='number' className='input_reg' placeholder='51'></input>
+                            </section>
+                            <section className='form'>
+                                <label>Disciplina da turma:</label>
+                                <select name='class' className='input_reg' placeholder='Sandra'></select>
                             </section>
                             <section className='button'>
                                 <button type='submit' className='register_btn'>Cadastrar</button>

@@ -159,14 +159,14 @@ input:focus{
 /*-----------------------------------------------------------TELA LOGIN-----------------------------------------------------------*/
 
 .login{
-    background-color: #ffffff;
+    background-color: transparent;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     /* display: grid; */
     grid-template-columns: 2fr 2fr;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .login-reverse{
@@ -185,10 +185,6 @@ input:focus{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    height: 100vh;
-    border-radius: 15px 0px 0px 15px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.54);
 }
 
 .containerTitule{
@@ -197,6 +193,7 @@ input:focus{
     align-items: center;
     text-align: center;
     padding: 20px;
+    
 }
 
 .textTitule{
@@ -228,6 +225,12 @@ input:focus{
     text-decoration: underline;
 }
 
+.containerForms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .containerInputs{
     display: flex;
     flex-direction: column;
@@ -241,6 +244,7 @@ input:focus{
     padding-left: 15px;
     margin-right: 25px;
     margin-bottom: 20px;
+    border: solid red 2px;
 }
 
 .containerInputs div{
