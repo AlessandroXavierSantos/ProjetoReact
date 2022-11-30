@@ -1,14 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './styles.css'
 import React from 'react'
 
 import { Calendar, Event, momentLocalizer } from 'react-big-calendar'
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import moment, { months } from 'moment'
-
-
+import moment from 'moment'
 
 const data = new Date()
 data.setDate(data.getDate() - 1)
