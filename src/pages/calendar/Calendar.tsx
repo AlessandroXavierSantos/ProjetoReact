@@ -4,10 +4,11 @@ import './style.css'
 import React from 'react'
 
 // Components
-import Header from '../../components/header'
-import Buttons from '../../components/buttons'
-import Calendario from '../../components/container_calendar'
-import Materias from '../../components/container_materials'
+import Header from '../../Components/header'
+import Buttons from '../../Components/buttons'
+import Calendario from '../../Components/container_calendar'
+import Materias from '../../Components/container_materials'
+import MyCalendar from '../../Components/container_calendar'
 
 function Calendar(){
     return(
@@ -15,8 +16,8 @@ function Calendar(){
             <section className="top">
                 <Header />
             </section>
-            <section className="mid_calendar">
-                <Calendario/>
+            <section className="mid_calendar">        
+                <MyCalendar/>
                 <Materias/>
             </section>
             <section className="bottom">

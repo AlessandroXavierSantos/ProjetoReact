@@ -584,3 +584,19 @@ td {
     line-height: 12px;
     text-transform: uppercase;
 }
+
+
+
+
+
+/* PERSONALIZACAO DO CALENDARIO */
+.rbc-event-content{
+    background-color: #A661FF;
+}
+.rbc-event{
+    background-color: #A661FF !important;
+}
+
+.rbc-today{
+    background-color: #e1caffd3 !important;
+}
