@@ -14,10 +14,12 @@ export default function MyCalendar(){
   const localizer = momentLocalizer(moment)
   const [myEventsList, setMyEventsList] = useState<Class[]>()
   
+  let data: Class[] = []
   const getEventList = useCallback(async ()=>{
     await getClasses(1).then(async (res)=>{
-      // setMyEventsList(res.data)
-      console.log(res)
+      res.data.aulas.map((eachData: Class) => {
+        data.push(eachData)
+      })
     })
   }, [])
 
@@ -31,7 +33,7 @@ export default function MyCalendar(){
     defaultDate={new Date()}
     defaultView="month"
     views={{"month": true, "agenda": true}}
-    events={myEventsList}
+    events={data}
     style={{ height: 600,
       width: 900,
       backgroundColor: "white",
