@@ -4,9 +4,9 @@ import './style.css'
 import React from 'react'
 
 // Components
-import Header from '../../components/header'
-import Buttons from '../../components/buttons'
-import Horario from '../../components/container_dashboard'
+import Header from '../../Components/header'
+import Buttons from '../../Components/buttons'
+import Horario from '../../Components/container_dashboard'
 
 function Dashboard(){
     return(

@@ -600,3 +600,9 @@ td {
 .rbc-today{
     background-color: #e1caffd3 !important;
 }
+
+select option {
+    background-color: green;
+    font-weight: bold;
+    color: red;
+}
