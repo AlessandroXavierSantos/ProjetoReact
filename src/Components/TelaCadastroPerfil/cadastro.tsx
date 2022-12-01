@@ -16,28 +16,25 @@ export default function cadastro(){
                 </div>
                 <div className="containerInputsCadastro">
                     <div>
-                        <label>Nome da Escola:</label>
+                        <label className="labelInput">Nome da Escola:</label>
                         <input type="text" className="inputsCadastro"/>
                     </div>
                     <div>
-                        <label>CNPJ da Escola:</label>
+                        <label className="labelInput">CNPJ da Escola:</label>
                         <input type="text" className="inputsCadastro"/>
                     </div>
                     <div>
-                        <label>Email da Escola:</label>
+                        <label className="labelInput">Email da Escola:</label>
                         <input type="text" className="inputsCadastro"/>
                     </div>
                     <div>
-                        <label>Senha:</label>
+                        <label className="labelInput">Senha:</label>
                         <input type="password" className="inputsCadastro"/>
                     </div>
                     <div>
-                        <label>Confirmar Senha:</label>
+                        <label className="labelInput">Confirmar Senha:</label>
                         <input type="password" className="inputsCadastro"/>
                     </div>
-                </div>
-                <div>
-                    <h3 className="textLoginCadastro">Já possui uma conta? Clique <span className="textColorCadastro click">aqui</span></h3>
                 </div>
                 <div>
                     <button className="btnCriarCadastro">Criar</button>

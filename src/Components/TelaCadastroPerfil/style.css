@@ -31,6 +31,7 @@ label{
     align-items: center;
     width: 50%;
     height: 100vh;
+    padding: 15px;
     border-radius: 0px 15px 15px 0px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.54);
 }
@@ -81,6 +82,7 @@ label{
     font-size: small;
     font-weight: 300;
     width: 770px;
+    padding:15px;
     margin-top: 15px;
     padding-left: 15px;
     margin-right: 25px;
@@ -117,6 +119,8 @@ input:focus{
     background-color: #A661FF;
     color: white;
     border: transparent solid 2px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     font-weight: 500;
     font-size: 25px;
@@ -134,6 +138,10 @@ input:focus{
     color: #A661FF;
     filter: drop-shadow(0px 4px 5px #A661FF);
     /* border: #A661FF solid 2px; */
+}
+
+.btnCriarCadastro:focus{
+    outline: none;
 }
 
 .secondContainerCadastro{
@@ -155,6 +163,17 @@ input:focus{
     right: 10px;
 }
 
+.divOutrosCadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: absolute;
+    bottom:0;
+    left:0px
+    /* text-align: center; */
+}
+
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------TELA LOGIN-----------------------------------------------------------*/
 
@@ -163,9 +182,8 @@ input:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height:100%;
     justify-content: center;
-    /* display: grid; */
-    grid-template-columns: 2fr 2fr;
     overflow: hidden;
 }
 
@@ -185,6 +203,7 @@ input:focus{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 35px;
 }
 
 .containerTitule{
@@ -193,7 +212,6 @@ input:focus{
     align-items: center;
     text-align: center;
     padding: 20px;
-    
 }
 
 .textTitule{
@@ -229,22 +247,21 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: solid red 2px; */
+    width:100%;
+    height: 100%;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.containerInputs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: small;
-    font-weight: 300;
-    width: 770px;
-    margin-top: 40px;
-    padding-left: 15px;
-    margin-right: 25px;
-    margin-bottom: 20px;
-    border: solid red 2px;
+/* .containerInputs{
+    font-size: 35px;
+    font-weight: 400;
+} */
+
+.labelInput{
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .containerInputs div{
@@ -259,11 +276,19 @@ input:focus{
     border-radius: 10px;
     margin-bottom: 25px;
     padding-left: 8px;
-    height: 30px;
+    height: 100%;
     border: rgba(0, 0, 0, 0.233) 2px solid;
     outline: none;
     box-shadow: 0px 4px 4px rgba(118, 118, 118, 0.32);
     transition: ease-in-out, .25s;
+}
+
+.divOutros{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 input:focus{

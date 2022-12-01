@@ -27,10 +27,21 @@ export default function telaInicial(){
 
     return(
         <div className="telaInicial">
+            <div>
+                
+            </div>
             <div className="firstDiv">
                 <Login/>
+                <div className="divOutros">
+                    <h3 className="textLoginCadastro">Não tem uma conta ainda? Clique <a className="textColorCadastro click">aqui</a> </h3>
+                </div>
             </div>
-            {/* <Cadastro/> */}
+            <div className="secondDiv">
+                <Cadastro/>
+                <div className="divOutrosCadastro">
+                    <h3 className="textLoginCadastro">Já possui uma conta? Clique <a className="textColorCadastro click">aqui</a> </h3>
+                </div>
+            </div>
         </div>
     )
 }

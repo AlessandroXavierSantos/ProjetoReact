@@ -17,11 +17,18 @@ export default function login(){
             </div>
             <div className="containerForms">
                 <form>
-                    <div className="">
-                        <label>Email: </label>
+                    <div>
+                        <label className="labelInput">Email: </label>
                         <input type="text" className="inputs"/>
                     </div>
+                    <div>
+                        <label className="labelInput">Senha: </label>
+                        <input type="password" className="inputs"/>
+                    </div>
                 </form>
+            </div>
+            <div className="divOutros">
+                <button className="btnCriarCadastro">Entrar</button>
             </div>
         </div>
     )
