@@ -33,13 +33,11 @@ export default function telaInicial(){
             <div className="firstDiv">
                 <Login/>
                 <div className="divOutros">
-                    <h3 className="textLoginCadastro">Não tem uma conta ainda? Clique <a className="textColorCadastro click">aqui</a> </h3>
-                </div>
-            </div>
-            <div className="secondDiv">
-                <Cadastro/>
-                <div className="divOutrosCadastro">
-                    <h3 className="textLoginCadastro">Já possui uma conta? Clique <a className="textColorCadastro click">aqui</a> </h3>
+                    <h3 className="textLoginCadastro">Não tem uma conta ainda? Clique
+                        <Link to='/Cadastro'>
+                            <a className="textColorCadastro click"> aqui</a> 
+                        </Link>
+                    </h3>
                 </div>
             </div>
         </div>

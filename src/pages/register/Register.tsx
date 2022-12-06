@@ -6,9 +6,9 @@ import React from 'react'
 // Components
 import Header from '../../Components/header'
 import Buttons from '../../Components/buttons'
-import Professor from '../../components/container_prof'
-import Turma from '../../components/container_class'
-import Disciplina from '../../components/container_subject'
+import Professor from '../../Components/container_prof'
+import Turma from '../../Components/container_class'
+import Disciplina from '../../Components/container_subject'
 
 function Register() {
 
