@@ -5,20 +5,12 @@ import React from 'react'
 
 // Components
 import Header from '../../Components/header'
-import Buttons from '../../Components/buttons'
 import Professor from '../../Components/container_prof'
 import Turma from '../../Components/container_class'
 import Disciplina from '../../Components/container_subject'
 
 function Register() {
-
-
-    const [teacherDisplay, setTeacherDisplay] = useState("block")
-    const [classesDisplay, setClassesDisplay] = useState("none")
-
     const [component, setComponent] = useState("2")
-
-
 
     return (
         <div>

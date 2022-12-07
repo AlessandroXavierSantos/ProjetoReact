@@ -15,7 +15,7 @@ export default function RoutesApp(){
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<TelaInicial/>}/>
-                <Route path='/Cadastro' element={<Cadastro/>}/>
+                <Route path='/cadastro' element={<Cadastro/>}/>
                 <Route  path='/dashboard' element={<Dashboard />}/>
                 <Route path='/calendar' element={<Calendar/>}/>
                 <Route  path='/register' element={<Register />}/>

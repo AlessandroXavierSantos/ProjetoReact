@@ -5,7 +5,6 @@ import './style.css'
 import logo from '../../assets/logo2.png'
 import imagemLogin from '../../assets/imagemLogin.png'
 //COMPONENTES
-import Cadastro from '../../Components/TelaCadastroPerfil/cadastro'
 import Login from '../../Components/TelaCadastroPerfil/login'
 
 export default function telaInicial(){
@@ -34,7 +33,7 @@ export default function telaInicial(){
                 <Login/>
                 <div className="divOutros">
                     <h3 className="textLoginCadastro">Não tem uma conta ainda? Clique
-                        <Link to='/Cadastro'>
+                        <Link to='/cadastro'>
                             <a className="textColorCadastro click"> aqui</a> 
                         </Link>
                     </h3>

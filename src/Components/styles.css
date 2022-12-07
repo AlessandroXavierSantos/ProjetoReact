@@ -145,9 +145,6 @@ svg {
     height: 30px;
 }
 
-
-/* Component */
-
 .professor {
     display: flex;
     align-items: center;
@@ -257,7 +254,8 @@ form {
 }
 
 label {
-    font-size: 13px;
+    margin-left: -60px;
+    font-size: 14px;
 }
 
 .form {
@@ -283,17 +281,18 @@ input {
 }
 
 input::placeholder {
-    color: rgba(0, 0, 0, 0.54);
+    color: rgba(0, 0, 0, 0.267);
 }
 
 .input_reg {
-    width: 206px;
-    height: 19px;
+    font-family: 'Poppins', sans-serif;
+    width: 256px;
+    height: 39px;
     background: rgba(246, 243, 249, 0.7);
     box-shadow: 2px 2px 4px rgba(166, 97, 255, 0.27);
     border-radius: 5px;
     border: rgba(166, 97, 255, 0.27) solid 2px;
-    font-size: 10px;
+    font-size: 16px;
     color: #000000;
     padding-left: 5px;
     padding-right: 5px;
@@ -305,7 +304,38 @@ input::placeholder {
     border: rgba(165, 97, 255, 0.575) solid 2px;
 }
 
+.error{
+    font-family: 'Poppins', sans-serif;
+    width: 256px;
+    height: 39px;
+    background: rgba(246, 243, 249, 0.7);
+    box-shadow: 2px 2px 4px rgba(255, 97, 97, 0.541);
+    border-radius: 5px;
+    border: rgba(187, 42, 42, 0.822) solid 2px;
+    font-size: 16px;
+    color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: ease-in-out, .25s;
+}
+
+.error:focus{
+    outline: none;
+    border: rgb(255, 2, 2) solid 2px;
+}
+
+.selectRegOption{
+
+    background: rgba(246, 243, 249, 0.7);
+    color: black;
+    border-radius: 5px;
+    width: 256px;
+    height: 39px;
+}
+
+
 .register_btn {
+    color: white;
     display: flex;
     align-items: center;
     align-content: center;
