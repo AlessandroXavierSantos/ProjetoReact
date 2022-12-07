@@ -42,6 +42,7 @@ label{
     align-items: center;
     text-align: center;
     padding: 20px;
+    margin-top: 30px;
 }
 
 .textTituleCadastro{
@@ -262,6 +263,7 @@ input:focus{
 .labelInput{
     font-size: 20px;
     font-weight: 400;
+    margin-left: 0px;
 }
 
 .containerInputs div{

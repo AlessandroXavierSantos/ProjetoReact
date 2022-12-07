@@ -9,10 +9,6 @@ import Professor from '../../Components/container_prof'
 import Turma from '../../Components/container_class'
 import Disciplina from '../../Components/container_subject'
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-
 function Register() {
     const [component, setComponent] = useState("2")
 

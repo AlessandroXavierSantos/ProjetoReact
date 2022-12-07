@@ -39,6 +39,14 @@ export default function cadastro(){
                 <div>
                     <button className="btnCriarCadastro">Criar</button>
                 </div>
+
+                <div className="divOutros">
+                    <h3 className="textLoginCadastro">Já tem uma conta? Clique
+                        <Link to='/'>
+                            <a className="textColorCadastro click"> aqui</a> 
+                        </Link>
+                    </h3>
+                </div>
             </div>
             <div className="secondContainerCadastro">
                 <div className="containerLogoCadastro">
