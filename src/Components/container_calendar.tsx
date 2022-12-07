@@ -5,14 +5,14 @@ import { Calendar, Event, momentLocalizer } from 'react-big-calendar'
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import moment from 'moment'
-
-import { getClasses } from '../Services/ClassService';
 import { Class } from '../interfaces/classInterface';
+
+//service 
+import { getClasses } from '../Services/ClassService';
 
 export default function MyCalendar(){
 
   const localizer = momentLocalizer(moment)
-  const [myEventsList, setMyEventsList] = useState<Class[]>()
   
   let data: Class[] = []
   const getEventList = useCallback(async ()=>{

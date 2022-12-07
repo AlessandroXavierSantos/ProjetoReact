@@ -5,20 +5,16 @@ import React from 'react'
 
 // Components
 import Header from '../../Components/header'
-import Buttons from '../../Components/buttons'
-import Professor from '../../components/container_prof'
-import Turma from '../../components/container_class'
-import Disciplina from '../../components/container_subject'
+import Professor from '../../Components/container_prof'
+import Turma from '../../Components/container_class'
+import Disciplina from '../../Components/container_subject'
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function Register() {
-
-
-    const [teacherDisplay, setTeacherDisplay] = useState("block")
-    const [classesDisplay, setClassesDisplay] = useState("none")
-
     const [component, setComponent] = useState("2")
-
-
 
     return (
         <div>

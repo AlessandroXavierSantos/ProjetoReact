@@ -5,8 +5,6 @@ import React from 'react'
 
 // Components
 import Header from '../../Components/header'
-import Buttons from '../../Components/buttons'
-import Calendario from '../../Components/container_calendar'
 import Materias from '../../Components/container_materials'
 import MyCalendar from '../../Components/container_calendar'
 
