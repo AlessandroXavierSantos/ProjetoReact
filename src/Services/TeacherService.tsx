@@ -8,3 +8,8 @@ export const createProfessor = (professor: Professor) => Api.post<{professor: Pr
     email: professor.email,
     senha: professor.senha
 })
+
+export const loginProfessor = (professor: Professor) => Api.post<{professor: Professor}>('/teacher/login', {
+    email: professor.email,
+    senha: professor.senha
+})

@@ -21,6 +21,9 @@ function Professor() {
     //states para senha
     const [classe, setClasse] = useState<string>("input_reg")
 
+    //state loading
+    const [loading, setLoading] = useState("none")
+
     const handleSubmit = async () => {
         console.log(nome)
         console.log(email)
@@ -74,6 +77,7 @@ function Professor() {
             return
         }
 
+        setLoading("flex")
         const data = await createProfessor({
             nome: nome,
             email: email,
@@ -110,7 +114,7 @@ function Professor() {
             })
 
         }
-
+        setLoading("none")
         document.getElementById('form').reset()
     }
 
@@ -149,6 +153,8 @@ function Professor() {
                             <section className='button'>
                                 <button type='button' className='register_btn' style={{marginTop: "-20px"}} onClick={handleSubmit} >Cadastrar</button>
                             </section>
+                            
+                            <div className='loading3' style={{display: loading}}></div>
                             <ToastContainer
                                 position="top-center"
                                 autoClose={5000}
@@ -161,6 +167,7 @@ function Professor() {
                                 pauseOnHover
                                 theme="light"
                             />
+                            
                         </form>
                     </div>
                 </div>

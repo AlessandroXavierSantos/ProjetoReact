@@ -365,7 +365,7 @@ input[type="radio"] {
     background-color: #e0e0e0;
     /* Not removed via appearance */
     margin: 0;
- 
+    margin-left: 50px;
     font: inherit;
     color: currentColor;
     width: 1.5em;
@@ -407,38 +407,13 @@ input[type="radio"]:checked::before {
  
 input[type="radio"]:disabled {
     --form-control-color: var(--form-control-disabled);
- 
     color: var(--form-control-disabled);
     cursor: not-allowed;
 }
 
-.animation{
-    background-color: white;
-    z-index: +2;
-    animation-name: changeScreen;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    
-}
-
-/* .animated{
-    z-index: +2;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-} */
-
-@keyframes changeScreen {
-    
-    0% {
-        /* flex-direction: row; */
-        transform: translateX(0%);
-    }
-    100%{
-        
-        transform: translateX(-100%);
-        /* flex-direction: row-reverse; */
-    }
+.radioInputs{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
