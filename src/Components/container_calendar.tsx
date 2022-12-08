@@ -12,11 +12,14 @@ import { getClasses } from '../Services/ClassService';
 
 export default function MyCalendar(){
 
-  const localizer = momentLocalizer(moment)
-  
+  const type = localStorage.getItem("type")
+  if(type == "user"){
+    window.location.href = "/"
+  }
+  const id: any = localStorage.getItem("id")
   let data: Class[] = []
   const getEventList = useCallback(async ()=>{
-    await getClasses(1).then(async (res)=>{
+    await getClasses(id).then(async (res)=>{
       res.data.aulas.map((eachData: Class) => {
         data.push(eachData)
       })
@@ -27,6 +30,8 @@ export default function MyCalendar(){
     getEventList()
   })
 
+  
+  const localizer = momentLocalizer(moment)
   return(
     <Calendar
     localizer={localizer}

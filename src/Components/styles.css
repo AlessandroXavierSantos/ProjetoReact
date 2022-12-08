@@ -25,11 +25,20 @@ header {
 .icon {
     display: flex;
     align-items: center;
+    transition: 0.5s;
+}
+
+.icon:hover{
+    cursor: pointer;
+    filter: brightness(60%);
+    transition: 0.5s;
 }
 
 .nav_pages {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
     text-align: center;
     gap: 15px;
 }
@@ -174,7 +183,7 @@ svg {
     justify-content: center;
     align-content: center;
     width: 896px;
-    height: 437px;
+    height: 467px;
     color: #000000;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -285,6 +294,7 @@ input::placeholder {
 }
 
 .input_reg {
+    margin-left: 10px;
     font-family: 'Poppins', sans-serif;
     width: 256px;
     height: 39px;
@@ -298,6 +308,18 @@ input::placeholder {
     padding-right: 5px;
     transition: ease-in-out, .25s;
 }
+
+.margin{
+    position: relative;
+    left: 56px;
+}
+
+
+.margin2{
+    position: relative;
+    left: 66px;
+}
+
 
 .input_reg:focus {
     outline: none;
@@ -615,10 +637,6 @@ td {
     text-transform: uppercase;
 }
 
-
-
-
-
 /* PERSONALIZACAO DO CALENDARIO */
 .rbc-event-content{
     background-color: #A661FF;
@@ -635,4 +653,40 @@ select option {
     background-color: green;
     font-weight: bold;
     color: red;
+}
+
+.loading {
+    width: 50%;
+    height: 110.9vh;
+    position: absolute;
+    background: rgba(224, 224, 224, 0.699)
+        url("https://manifestoglauber.com.br/frontend/assets/images/loader.gif") center
+        no-repeat;
+    background-size: 20%;
+    z-index: 1;
+}
+
+.loading2{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(224, 224, 224, 0.699)
+        url("https://manifestoglauber.com.br/frontend/assets/images/loader.gif") center
+        no-repeat;
+    background-size: 20%;
+    z-index: 1;
+}
+
+.loading3{
+    border-radius: 20px;
+    width: 47.89%;
+    height: 46vh;
+    top: 27%;
+    left: 51vh;
+    position: absolute;
+    background: rgba(224, 224, 224, 0.699)
+        url("https://manifestoglauber.com.br/frontend/assets/images/loader.gif") center
+        no-repeat;
+    background-size: 10%;
+    z-index: 1;
 }
